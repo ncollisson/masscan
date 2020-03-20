@@ -151,7 +151,7 @@ status_print(
             
         } else {
             fprintf(stderr,
-                "rate:%6.2f-kpps, %5.2f%% done,%4u:%02u:%02u remaining, found=%" PRIu64 "       \r",
+                "{\"rate\": %.2f, \"percent_done\": %.0f, \"remaining\": \"%u:%02u:%02u\", \"found\": %" PRIu64 "}\n",
                         x/1000.0,
                         percent_done,
                         (unsigned)(time_remaining/60/60),
